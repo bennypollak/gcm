@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Map</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+    #map {
+      height: 100%;
+    }
+
+    /* Optional: Makes the sample page fill the window. */
+
+    html,
+    body {
+      height: 100%;
+      margin: 10;
+      padding: 0;
+    }
+  </style>
+  <script type="text/javascript" src="/google/gcm.js">
+  </script>
+</head>
+
+<body onload="onLoad()">
+  <h2><a href="http://en.wikipedia.org/wiki/Great_circle">Great Circle</a> Mapping Tool</h2>
+	Select 2 points to draw the
+  <a href="http://en.wikipedia.org/wiki/Great_circle">Great Circle</a>
+	route between them.
+    <div id="map" style="width: 600px; height: 500px"></div>
+	<table>
+	<tr>
+	<td><font color="#ff0000">Great Circle Route</font>
+	<td><font color="#0000ff">Long Route</font>
+	</table>
+	<button id="clear">Clear</button>
+  <br>
+  <div id="map"></div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3Bmzz6-VGMK7s8CcZW0JQBNMh3S-igzM&callback=onLoad" async defer></script>
+</body>
+
+</html>
+<!DOCTYPE html>
